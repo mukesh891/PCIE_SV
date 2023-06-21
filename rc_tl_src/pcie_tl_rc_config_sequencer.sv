@@ -1,0 +1,1 @@
+typedef uvm_sequencer#(pcie_tl_rc_config_seq_item_pkg) pcie_tl_rc_config_sequencer;
