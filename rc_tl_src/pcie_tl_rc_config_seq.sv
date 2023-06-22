@@ -20,7 +20,6 @@ endtask
     task body();
      req = pcie_tl_rc_config_seq_item_pkg::type_id::create("req");
        `uvm_do(req)
-       req.print();
     endtask
 
     endclass

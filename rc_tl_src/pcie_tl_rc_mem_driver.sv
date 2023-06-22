@@ -1,5 +1,5 @@
-class pcie_tl_rc_driver extends uvm_driver#(pcie_tl_rc_config_seq_item_pkg); 
-    `uvm_component_utils(pcie_tl_rc_driver)
+class pcie_tl_rc_mem_driver extends uvm_driver#(pcie_tl_rc_mem_seq_item_pkg); 
+    `uvm_component_utils(pcie_tl_rc_mem_driver)
     bit[127:0]  frame;
 
     function new(string name="",uvm_component parent=null);
@@ -28,7 +28,7 @@ class pcie_tl_rc_driver extends uvm_driver#(pcie_tl_rc_config_seq_item_pkg);
        	end
     endtask
      
-    task drive_tx(pcie_tl_rc_config_seq_item_pkg tx);
+    task drive_tx(pcie_tl_rc_mem_seq_item_pkg tx);
        @(posedge vif.clk);
        	
 	`uvm_info("Run_phase","drive_tx",UVM_LOW)

@@ -1,5 +1,5 @@
-class pcie_tl_rc_driver extends uvm_driver#(pcie_tl_rc_config_seq_item_pkg); 
-    `uvm_component_utils(pcie_tl_rc_driver)
+class pcie_tl_rc_cfg_driver extends uvm_driver#(pcie_tl_rc_config_seq_item_pkg); 
+    `uvm_component_utils(pcie_tl_rc_cfg_driver)
     bit[127:0]  frame;
 
     function new(string name="",uvm_component parent=null);
